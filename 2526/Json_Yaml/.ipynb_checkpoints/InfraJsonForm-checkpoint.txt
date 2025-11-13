@@ -1,0 +1,53 @@
+en module (:container [complexe structuur]: list: leaf ) is een onderdeel van en YANG Data model
+Module _
+	|_ container_
+		     |_ list_
+			     |_leafs
+
+	Example Definition
+
+Title: Student System Information
+Description: Simple Form to collect names, emails, systeminfo, Feedback.
+
+Section 1: Personal information
+Q1: Full Name (short anw)
+Q2: Email address (Not null)
+
+Section 2: System information
+Q1: Name|
+Q2: Model
+Q3: OS 
+Q4: OS-version 
+Q5: CPU 
+Q6: RAM 
+Q7: Max storage capacity
+
+Section 3: Feedback
+Q1: Do you want to receive updates? (checkbox)
+Options: Yes, send me updates
+
+
+	Convert to JSON
+
+{
+      "title": "Student System Information",
+      "description": "Simple Form to collect names, emails, system info, and feedback.",
+      "items": [
+        // Section 1: Personal Information
+        { "title": "Full Name", "type": "SHORT_ANSWER", "required": true },
+        { "title": "Email Address", "type": "SHORT_ANSWER", "required": true },
+
+        // Section 2: System Information
+        { "title": "System Name", "type": "SHORT_ANSWER", "required": true },
+        { "title": "Model", "type": "SHORT_ANSWER", "required": true },
+        { "title": "Operating System", "type": "SHORT_ANSWER", "required": true },
+        { "title": "OS Version", "type": "SHORT_ANSWER" },
+        { "title": "CPU", "type": "SHORT_ANSWER" },
+        { "title": "RAM", "type": "SHORT_ANSWER" },
+        { "title": "Max Storage Capacity", "type": "SHORT_ANSWER" },
+
+        // Section 3: Feedback
+        { "title": "Do you want to receive updates?", "type": "CHECKBOXES",
+          "options": ["Yes, send me updates"] }
+      ]
+    };

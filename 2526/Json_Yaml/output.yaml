@@ -1,0 +1,65 @@
+Systeemoverzicht:
+- Systeemnaam: KEVINXP
+  Processor: AMD Ryzen 7 5800U with Radeon Graphics
+  Versie: 10.0.26200 Build 26200
+  BIOS-modus: UEFI
+  OS name: Microsoft Windows 11 Home
+  RAM: Geïnstalleerd fysiek geheugen (RAM) 16,0 GB
+  Systeemtype: x64-based PC
+  Schijfbeheer:
+  - Volume: Schijf 0 partitie 1
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: ''
+    Status: In orde (EFI-systeempartitie)
+    Capaciteit: 260 MB
+    Vrije ruimte: 260 MB
+    '% vrij': 100%
+  - Volume: Schijf o partitie 4
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: ''
+    Status: In orde (Herstelpartitie)
+    Capaciteit: 766 MB
+    Vrije ruimte: 766 MB
+    '% vrij': 100%
+  - Volume: Windows (C:)
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: NTFS (Met BitLoker versleuteld)
+    Status: In orde (Opstarten, Wisselbestand, Crashdump, Standaardgegevenspartitie)
+    Capaciteit: 475,91 GB
+    Vrije ruimte: 113.76 GB
+    '% vrij': 24%
+- Systeemnaam: Theos
+  Processor: AMD Ryzen 7 5800H with Radeon Graphics
+  Versie: ''
+  BIOS-modus: UEFI
+  OS name: Microsoft Windows 11 Home
+  RAM: 16,0 GB
+  Systeemtype: ''
+  Schijfbeheer:
+  - Volume: Schijf 0 partitie 1
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: ''
+    Status: In orde (EFI-systeempartitie)
+    Capaciteit: 260 MB
+    Vrije ruimte: 260 MB
+    '% vrij': 100%
+  - Volume: Schijf o partitie 4
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: ''
+    Status: In orde (Herstelpartitie)
+    Capaciteit: 766 MB
+    Vrije ruimte: 766 MB
+    '% vrij': 100%
+  - Volume: Windows (C:)
+    Indeling: Eenvoudig
+    Type: Standaard
+    Bestanssysteem: NTFS (Met BitLoker versleuteld)
+    Status: In orde (Opstarten, Wisselbestand, Crashdump, Standaardgegevenspartitie)
+    Capaciteit: 475,91 GB
+    Vrije ruimte: 113.76 GB
+    '% vrij': 24%

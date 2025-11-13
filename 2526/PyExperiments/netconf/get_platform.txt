@@ -1,0 +1,726 @@
+
+Now connecting to router via NETCONF...
+
+Hostname:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+		<hostname>CAT9k_AO</hostname>
+	</native>
+</data>
+
+Platform / Software Version:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"/>
+
+Hardware Inventory:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<components xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-platform-oper">
+		<component>
+			<cname>Switch1</cname>
+			<state>
+				<type>comp-chassis</type>
+				<id>1000</id>
+				<description/>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location>1/0/0/0</location>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver>0.1</firmware-ver>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-minor</severity>
+				</comp-alarm-data>
+				<parent>Switch1</parent>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+			<platform-subcomponents>
+				<platform-subcomponent>
+					<name>FixedModule1/0</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/1</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/2</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/3</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/4</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/5</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/6</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/7</name>
+				</platform-subcomponent>
+				<platform-subcomponent>
+					<name>GigabitEthernetContainer1/0/8</name>
+				</platform-subcomponent>
+			</platform-subcomponents>
+		</component>
+		<component>
+			<cname>c3xxx Stack</cname>
+			<state>
+				<type>comp-chassis</type>
+				<id>1</id>
+				<description>c3xxx Stack</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location>1/0/0/0</location>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent>Switch1</parent>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+			<platform-subcomponents>
+				<platform-subcomponent>
+					<name>Switch1</name>
+				</platform-subcomponent>
+			</platform-subcomponents>
+		</component>
+		<component>
+			<cname>FixedModule1/0</cname>
+			<state>
+				<type>comp-port</type>
+				<id>1060</id>
+				<description>Switch 1 - C9KV-UADP-8P - Fixed Module 0</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location>1/0/0/0</location>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent>Switch1</parent>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/1</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1061</id>
+				<description>Gi1/0/1 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/2</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1062</id>
+				<description>Gi1/0/2 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/3</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1063</id>
+				<description>Gi1/0/3 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/4</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1064</id>
+				<description>Gi1/0/4 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/5</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1065</id>
+				<description>Gi1/0/5 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/6</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1066</id>
+				<description>Gi1/0/6 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/7</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1067</id>
+				<description>Gi1/0/7 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+		<component>
+			<cname>GigabitEthernetContainer1/0/8</cname>
+			<state>
+				<type>comp-container</type>
+				<id>1068</id>
+				<description>Gi1/0/8 Container</description>
+				<mfg-name/>
+				<version/>
+				<serial-no/>
+				<part-no/>
+				<temp>
+					<temp-instant>0.0</temp-instant>
+					<temp-avg>0.0</temp-avg>
+					<temp-max>0.0</temp-max>
+					<temp-min>0.0</temp-min>
+					<temp-interval>0</temp-interval>
+				</temp>
+				<location/>
+				<empty>false</empty>
+				<mfg-date>1970-01-01T00:00:00+00:00</mfg-date>
+				<firmware-ver/>
+				<removable>false</removable>
+				<status>status-active</status>
+				<comp-alarm-data>
+					<alarm-status>false</alarm-status>
+					<alarm-threshold>0</alarm-threshold>
+					<severity>severity-unknown</severity>
+				</comp-alarm-data>
+				<parent/>
+				<comp-mem-data>
+					<mem-available>0</mem-available>
+					<mem-utilized>0</mem-utilized>
+				</comp-mem-data>
+				<alloc-pwr>0</alloc-pwr>
+				<used-pwr>0</used-pwr>
+				<status-desc>status-desc-ok</status-desc>
+			</state>
+		</component>
+	</components>
+</data>
+
+Interfaces:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+		<interface>
+			<name>GigabitEthernet0/0</name>
+			<description>DO NOT TOUCH</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+				<address>
+					<ip>10.10.20.66</ip>
+					<netmask>255.255.255.0</netmask>
+				</address>
+			</ipv4>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/1</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/2</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/3</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/4</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/5</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/6</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/7</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>GigabitEthernet1/0/8</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:ethernetCsmacd</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Loopback4211</name>
+			<description>Ansible interface 4211</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Loopback4212</name>
+			<description>Ansible interface 4212</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Loopback4213</name>
+			<description>Ansible interface 4213</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Loopback4214</name>
+			<description>Ansible interface 4214</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:softwareLoopback</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Vlan1</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:l3ipvlan</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Vlan10</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:l3ipvlan</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+				<address>
+					<ip>192.168.11.1</ip>
+					<netmask>255.255.255.0</netmask>
+				</address>
+			</ipv4>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Vlan20</name>
+			<description>*** This is a test vlan20 ***</description>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:l3ipvlan</type>
+			<enabled>false</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+				<address>
+					<ip>10.100.20.1</ip>
+					<netmask>255.255.255.0</netmask>
+				</address>
+			</ipv4>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+		<interface>
+			<name>Vlan45</name>
+			<type xmlns:ianaift="urn:ietf:params:xml:ns:yang:iana-if-type">ianaift:l3ipvlan</type>
+			<enabled>true</enabled>
+			<ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+				<address>
+					<ip>200.200.10.45</ip>
+					<netmask>255.255.255.0</netmask>
+				</address>
+			</ipv4>
+			<ipv6 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip"/>
+		</interface>
+	</interfaces>
+</data>
+
+Routing (OSPF):
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<ospf-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ospf-oper">
+		<ospf-state>
+			<op-mode>ospf-ships-in-the-night</op-mode>
+		</ospf-state>
+	</ospf-oper-data>
+</data>
+
+CDP Neighbors:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"/>
+
+LLDP Neighbors:
+<?xml version="1.0" ?>
+<data xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<lldp-entries xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-lldp-oper">
+		<lldp-state-details>
+			<enabled>false</enabled>
+			<hello-timer>30</hello-timer>
+			<system-name>CAT9k_AO</system-name>
+			<system-desc>Cisco IOS Software [IOSXE], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 17.15.1, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Sun 11-Aug-24 22:16 by mcpre</system-desc>
+			<chassis-id/>
+			<chassis-id-type>chassis-entphyalias</chassis-id-type>
+			<frame-in>0</frame-in>
+			<frame-out>0</frame-out>
+			<frame-error-in>0</frame-error-in>
+			<frame-discard>0</frame-discard>
+			<tlv-discard>0</tlv-discard>
+			<tlv-unknown>0</tlv-unknown>
+			<entries-aged-out>0</entries-aged-out>
+			<mem-failures>0</mem-failures>
+			<encap-failures>0</encap-failures>
+			<inqueue-overflow>0</inqueue-overflow>
+			<table-overflow>0</table-overflow>
+		</lldp-state-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet0/0</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>tx-init</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/1</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/2</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/3</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/4</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/5</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/6</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/7</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+		<lldp-intf-details>
+			<if-name>GigabitEthernet1/0/8</if-name>
+			<isenabled>true</isenabled>
+			<tx>rx-init</tx>
+			<rx>wait-port-oper</rx>
+		</lldp-intf-details>
+	</lldp-entries>
+</data>
+
+
+OK: NETCONF inventory query complete.
+

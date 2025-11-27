@@ -1,0 +1,27 @@
+Week 13/11
+
+IaC = Network programmability
+
+Network devices managen met network tools (met code). [Back-end apps gebruiken]
+
+
+CLI = last resort 
+
+* Python 
+	ºRestconf
+		]-- IETF -> YANG
+	ºNetconf
+	ºDNAC (Catalyst center) ] ENTERPRISE NETWORK
+*bash
+*Ansible (=is deployment/configuration management) --> inventory 
+							*OS            
+							*interface
+						       config managen
+intalleren --> configureren --> managen
+
+inventaries maken met tools {oef}
+
+terraform = provisioning (zorgen dat een machine is). 
+
+NSO kunnen koppelen aan netconf (YANG datamodel for network)
+------------------------------------------------------------------------

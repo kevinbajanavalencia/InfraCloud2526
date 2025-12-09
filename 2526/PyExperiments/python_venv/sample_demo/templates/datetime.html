@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <h1>Date & Time</h1>
+</header>
+
+<main class="container">
+    <div class="card big">
+        <span id="datetime"></span>
+    </div>
+
+    <div class="buttons">
+        <a href="{{ url_for('main') }}" class="btn">Back Home</a>
+    </div>
+</main>
+
+<script>
+function updateTime() {
+    document.getElementById("datetime").textContent = new Date().toLocaleString();
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+</body>
+</html>

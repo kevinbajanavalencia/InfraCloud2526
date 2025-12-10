@@ -1,0 +1,9 @@
+week20
+Verschil tussen server en network device?
+- De interfaces 
+
+Ansible is geschreven in welke formaat?
+playbook is een field met meerdere plays. 
+
+VM: ssh -i /home/devasc/.ssh/id_rsa cisco@192.168.56.101
+

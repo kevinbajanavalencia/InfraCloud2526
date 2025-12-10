@@ -1,7 +1,7 @@
 import sqlite3
 
 # Full path to your actual database
-db_path = "/home/devasc/Documents/InfraCloud/InfraCloud2526/2526/PyExperiments/python_venv/flask-app/user.db"
+db_path = "./2526/PyExperiments/python_venv/flask-app/user.db"
 
 conn = sqlite3.connect(db_path)
 c = conn.cursor()

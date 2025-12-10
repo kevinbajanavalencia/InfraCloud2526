@@ -8,19 +8,7 @@ microweb_app = Flask(__name__)
 
 @microweb_app.route("/")
 def main():
-    return render_template("index.html" , datetime_now = datetime.datetime.now())
-
-@microweb_app.route("/time")
-def time():
-    return render_template("time.html")
-
-@microweb_app.route("/map")
-def map():
-    return render_template("map.html")
-
-@microweb_app.route("/login")
-def login():
-    return render_template("login.html")
+    return render_template("login.html" , datetime_now = datetime.datetime.now())
 
 @microweb_app.route("/account")
 def account():

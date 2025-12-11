@@ -17,4 +17,4 @@ def map_page():
     return render_template("map.html")
 
 if __name__ == "__main__":
-    sample.run(host="0.0.0.0" , port=5055)
+    sample.run(host="0.0.0.0" , port=5055, threaded=False)

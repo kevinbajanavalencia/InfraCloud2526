@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Account</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <div class="container">
         <h2>Create a New User Account</h2>
 
-        <form action="/signup/v2" method="post">
+        <form action="/signup/v2" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter username" required>
 

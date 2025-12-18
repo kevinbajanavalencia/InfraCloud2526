@@ -8,10 +8,13 @@
 <body>
     <div class="container">
         <h2>Welcome back</h2>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
         <p>Log in to your account</p>
 
         <!-- GitHub Login -->
-        <button class="github-btn">Log in with GitHub</button>
+        <button class="github-btn">Log in with KEV</button>
 
         <p>or</p>
 
@@ -27,8 +30,8 @@
         </form>
 
         <div class="links">
-            <a href="/account">Don't have an account? Sign up</a><br>
-            <a href="#">Forgot password?</a>
+            <a href="/signup/v2">Don't have an account? Sign up</a><br>
+            <a href="/update_pw/v2">Forgot password?</a>
         </div>
     </div>
 </body>

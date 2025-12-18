@@ -1,140 +1,93 @@
 from flask import Flask, request, render_template
-import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
+
+import db  # 👈 your database module
 
 microweb_app = Flask(__name__)
 
-DB_NAME = "user.db"
+# Init DB at startup
+db.init_db()
 
-# -------------------- Database Setup --------------------
-def init_db():
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-
-    # Cleartext table (for assignment demonstration)
-    c.execute("""
-        CREATE TABLE IF NOT EXISTS USER_PLAIN (
-            USERNAME TEXT PRIMARY KEY NOT NULL,
-            PASSWORD TEXT NOT NULL
-        )
-    """)
-
-    # Secure hashed table
-    c.execute("""
-        CREATE TABLE IF NOT EXISTS USER_HASH (
-            USERNAME TEXT PRIMARY KEY NOT NULL,
-            HASH TEXT NOT NULL
-        )
-    """)
-
-    conn.commit()
-    conn.close()
-
-init_db()
-
-# -------------------- Delete All -------------------------
-@microweb_app.route('/delete/all', methods=['POST', 'DELETE'])
-def delete_all():
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-
-    c.execute("DELETE FROM USER_PLAIN")
-    c.execute("DELETE FROM USER_HASH")
-
-    conn.commit()
-    conn.close()
-
-    return "All test users deleted\n"
-
-
-# ------------------ Signup v1 (plain text) ----------------
-@microweb_app.route('/signup/v1', methods=['POST'])
-def signup_v1():
-    username = request.form['username']
-    password = request.form['password']
-
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-    try:
-        c.execute("INSERT INTO USER_PLAIN (USERNAME, PASSWORD) VALUES (?, ?)",
-                  (username, password))
-        conn.commit()
-    except sqlite3.IntegrityError:
-        return "Username already exists (insecure table)\n"
-    finally:
-        conn.close()
-
-    return "Signup successful (insecure)\n"
-
-
-def verify_plain(username, password):
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-    c.execute("SELECT PASSWORD FROM USER_PLAIN WHERE USERNAME = ?", (username,))
-    row = c.fetchone()
-    conn.close()
-
-    return row and row[0] == password
-
-
-@microweb_app.route('/login/v1', methods=['POST'])
-def login_v1():
-    if verify_plain(request.form['username'], request.form['password']):
-        return "Login success (insecure)\n"
-    return "Invalid username/password\n"
-
-
-# ------------------ Signup v2 (secure hash) ----------------
-@microweb_app.route('/signup/v2', methods=['POST'])
-def signup_v2():
-    username = request.form['username']
-    password = request.form['password']
-
-    hashed_pw = generate_password_hash(password)
-
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-
-    try:
-        c.execute("INSERT INTO USER_HASH (USERNAME, HASH) VALUES (?, ?)",
-                  (username, hashed_pw))
-        conn.commit()
-    except sqlite3.IntegrityError:
-        return "Username already exists\n"
-    finally:
-        conn.close()
-
-    return "Secure signup succeeded\n"
-
-
-def verify_hash(username, password):
-    conn = sqlite3.connect(DB_NAME)
-    c = conn.cursor()
-    c.execute("SELECT HASH FROM USER_HASH WHERE USERNAME = ?", (username,))
-    row = c.fetchone()
-    conn.close()
-
-    return row and check_password_hash(row[0], password)
-
-
-@microweb_app.route('/login/v2', methods=['POST'])
-def login_v2():
-    if verify_hash(request.form['username'], request.form['password']):
-        return "Login success (secure hash)\n"
-    return "Invalid username/password\n"
-
-
-# ------------------ Render Login Page ---------------------
+# ------------------------------------------------------
+# Routes
+# ------------------------------------------------------
 @microweb_app.route('/')
 def main():
     return render_template("login.html")
 
-# ------------------ Render account Page ---------------------
-@microweb_app.route('/account')
-def account_page():
-    return render_template("account.html")
+
+@microweb_app.route('/signup/v2', methods=['GET', 'POST'])
+def signup_v2():
+    if request.method == 'GET':
+        return render_template("signup.html")
+
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    if not username or not password:
+        return "Missing username or password\n", 400
+
+    try:
+        db.create_user(username, generate_password_hash(password))
+    except Exception:
+        return "Username already exists\n", 409
+
+    return "Secure signup succeeded\n"
 
 
-# ------------------ Launch -------------------------------
+@microweb_app.route('/login/v2', methods=['POST'])
+def login_v2():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
+    pw_hash = db.get_user_hash(username)
+    if not pw_hash or not check_password_hash(pw_hash, password):
+        return "Invalid username/password\n", 401
+
+    db.update_last_login(username)
+    user = db.get_user_info(username)
+
+    return render_template("account.html", user=user)
+
+
+@microweb_app.route('/update_pw/v2', methods=['GET', 'POST'])
+def update_password():
+    if request.method == 'GET':
+        return render_template("update_pw.html")
+
+    username = request.form.get('username')
+    old_password = request.form.get('old_password')
+    new_password = request.form.get('new_password')
+    go_to_login = request.form.get('go_to_login')
+
+    pw_hash = db.get_user_hash(username)
+    if not pw_hash or not check_password_hash(pw_hash, old_password):
+        return "Old password incorrect\n", 401
+
+    db.update_password(username, generate_password_hash(new_password))
+
+    if go_to_login == "1":
+        return render_template(
+            "login.html",
+            message="Password updated successfully. Please log in."
+        )
+
+    return "Password updated successfully\n"
+
+
+@microweb_app.route('/delete/all', methods=['POST', 'DELETE'])
+def delete_all():
+    db.delete_all_users()
+    return "All test users deleted\n"
+
+
+# ------------------------------------------------------
+# Run
+# ------------------------------------------------------
 if __name__ == "__main__":
-    microweb_app.run(host="0.0.0.0", port=5080, ssl_context='adhoc')
+    microweb_app.run(
+        host="0.0.0.0",
+        port=5080,
+        ssl_context="adhoc",
+        debug=True
+    )

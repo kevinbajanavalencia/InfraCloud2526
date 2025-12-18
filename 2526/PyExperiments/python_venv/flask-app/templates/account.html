@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Create Account</title>
-    <link rel="stylesheet" href="static/style.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h2>Create a New User Account</h2>
-
-        <form action="/signup/v2" method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter username" required>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter password" required>
-
-            <button type="submit" class="signup-btn">Create Account</button>
-        </form>
+        <h2>Account</h2>
+        
+        {% if user %}
+            <p><strong>Username:</strong> {{ user[0] }}</p>
+            <p><strong>Created at:</strong> {{ user[1] }}</p>
+            <p><strong>Password changed at:</strong> {{ user[2] or "Never" }}</p>
+            <p><strong>Last login:</strong> {{ user[3] or "Never" }}</p>
+        {% else %}
+            <p>You are logged in.</p>
+        {% endif %}
 
         <div class="links">
-            <a href="/">Already have an account? Log in here</a>
+            <a href="/">Log out</a>
         </div>
     </div>
 </body>

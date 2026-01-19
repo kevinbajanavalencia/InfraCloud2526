@@ -50,3 +50,15 @@ venv/
 **/__pycache__/
 *.pyc
 pyvenv.cfg
+
+# Python virtual environments & artifacts
+**/.venv/
+**/venv/
+**/env/
+**/flask_appkev/
+**/site-packages/
+**/__pycache__/
+*.pyc
+pyvenv.cfg
+# Local python envs in sample demos
+**/sample_env/

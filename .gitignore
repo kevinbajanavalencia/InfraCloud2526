@@ -28,3 +28,16 @@ portfolio/Pv1_Venv_Slides_6_7/Test/
 flask_appkev/
 
 Ap4_API_Webforms/**/flask_appkev/
+
+# Python venv / virtualenv
+venv/
+.venv/
+*/venv/
+*/.venv/
+pyvenv.cfg
+brussel_env/
+flask_appkev/
+
+# Python caches
+__pycache__/
+*.pyc

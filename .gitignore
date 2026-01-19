@@ -41,3 +41,12 @@ flask_appkev/
 # Python caches
 __pycache__/
 *.pyc
+
+# Python virtual environments
+python_venv/
+.venv/
+venv/
+**/site-packages/
+**/__pycache__/
+*.pyc
+pyvenv.cfg

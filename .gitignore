@@ -1,0 +1,22 @@
+.env
+.env.*
+*.env
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*/venv/
+*/.venv/
+*env/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+Thumbs.db
+
+# allow example env file
+!.env.example
+
+# allow example env file
+!.env.example

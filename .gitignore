@@ -62,3 +62,14 @@ pyvenv.cfg
 pyvenv.cfg
 # Local python envs in sample demos
 **/sample_env/
+
+# Python virtual environments (anywhere)
+**/venv/
+**/.venv/
+**/env/
+**/sample_env/
+**/flask_appkev/
+
+# Python caches
+**/__pycache__/
+*.pyc

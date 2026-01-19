@@ -20,3 +20,11 @@ Thumbs.db
 
 # allow example env file
 !.env.example
+
+# ignore accidental venv test folder
+portfolio/Pv1_Venv_Slides_6_7/Test/
+
+# ignore local venv folders
+flask_appkev/
+
+Ap4_API_Webforms/**/flask_appkev/

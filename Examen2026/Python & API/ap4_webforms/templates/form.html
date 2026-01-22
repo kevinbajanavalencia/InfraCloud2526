@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ap4 - Webform</title>
+</head>
+<body>
+    <h1>Ap4 – Eigen API-experiment (Webforms)</h1>
+
+    <form method="POST">
+        <label>Naam:</label>
+        <input type="text" name="naam" required>
+        <br><br>
+
+        <label>Bericht:</label>
+        <input type="text" name="bericht" required>
+        <br><br>
+
+        <button type="submit">Verstuur</button>
+    </form>
+
+    {% if naam %}
+        <h2>Ontvangen data</h2>
+        <p><strong>Naam:</strong> {{ naam }}</p>
+        <p><strong>Bericht:</strong> {{ bericht }}</p>
+    {% endif %}
+</body>
+</html>
